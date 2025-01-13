@@ -1,15 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid Statistics Table</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <!-- add table here -->
+    <table>
+        <!-- Caption -->
+        <caption>Covid-19 Statistics (2025)</caption>
 
-        
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Total Cases</th>
+                <th>Recovered</th>
+                <th>Deaths</th>
+                <th>Active Cases</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>USA</td>
+                <td>100,000,000</td>
+                <td>98,000,000</td>
+                <td>1,000,000</td>
+                <td>1,000,000</td>
+            </tr>
+            <tr>
+                <td>India</td>
+                <td>50,000,000</td>
+                <td>48,000,000</td>
+                <td>500,000</td>
+                <td>1,500,000</td>
+            </tr>
+            <tr>
+                <td>Brazil</td>
+                <td>40,000,000</td>
+                <td>39,000,000</td>
+                <td>300,000</td>
+                <td>700,000</td>
+            </tr>
+            <tr>
+                <td>UK</td>
+                <td>20,000,000</td>
+                <td>19,500,000</td>
+                <td>150,000</td>
+                <td>350,000</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
